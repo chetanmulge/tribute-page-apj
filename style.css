@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    background-color: #e5e5fd;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Add padding for mobile compatibility */
+}
+
+/* Content */
+.content {
+    max-width: 900px; /* Set maximum width */
+    width: 100%; /* Ensure it adjusts to screen size */
+    margin: 0 auto;
+    text-align: center;
+    overflow-wrap: break-word; /* Prevent text overflow */
+}
+
+/* Image Container */
+.image_container {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.image_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits nicely */
+}
+
+/* Top Section */
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.top h1 {
+    font-size: 50px;
+    color: #1d1e4c;
+    text-transform: uppercase;
+}
+
+.top h4 {
+    font-size: 24px;
+    color: #555;
+}
+
+/* About Section */
+.about {
+    margin-top: 30px;
+    padding: 10px;
+    text-align: justify; /* Align text for better readability */
+}
+
+.about h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1d1e4c;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top h1 {
+        font-size: 30px;
+    }
+
+    .top h4 {
+        font-size: 18px;
+    }
+
+    .about h2 {
+        font-size: 24px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .image_container {
+        width: 200px;
+        height: 200px;
+    }
+}
